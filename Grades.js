@@ -8,15 +8,8 @@ import {
   ShowButton,
   EditButton
 } from "react-admin";
-import { Show, SimpleShowLayout, DateField, RichTextField } from "react-admin";
-import {
-  Create,
-  Edit,
-  SimpleForm,
-  DateInput,
-  LongTextInput,
-  ReferenceManyField
-} from "react-admin";
+import { Show, SimpleShowLayout } from "react-admin";
+import { Create, Edit, SimpleForm } from "react-admin";
 
 const GradesFilter = props => (
   <Filter {...props}>
