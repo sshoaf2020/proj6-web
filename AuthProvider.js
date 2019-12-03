@@ -3,7 +3,7 @@ import { AUTH_LOGIN, AUTH_LOGOUT, AUTH_ERROR, AUTH_CHECK } from "react-admin";
 export default (type, params) => {
   if (type === AUTH_LOGIN) {
     const { username, password } = params;
-    localStorage.setItem("authString", bota(`${username}:${password}`));
+    localStorage.setItem("authString", btoa(`${username}:${password}`));
   }
   if (type == AUTH_CHECK) {
     return localStorage.getItem("authString")
