@@ -18,7 +18,7 @@ import {
 import { ListGrades, ShowGrade, EditGrade, CreateGrade } from "./Grades";
 
 let host = window.location.host;
-host = host.split(":")[0] + ":3001";
+host = host.split(":")[0] + ":3000";
 let url = "http://" + host;
 
 const httpClient = (url, options = {}) => {
