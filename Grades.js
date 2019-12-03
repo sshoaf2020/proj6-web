@@ -13,7 +13,6 @@ import {
   Create,
   Edit,
   SimpleForm,
-  DisabledInput,
   DateInput,
   LongTextInput,
   ReferenceManyField
@@ -70,7 +69,7 @@ export const CreateGrade = props => (
 export const EditGrade = props => (
   <Edit title={<GradeTitle />} {...props}>
     <SimpleForm>
-      <DisabledInput label="Id" source="id" />
+      <TextField source="id" />
       <TextInput source="student_id" />
       <TextInput source="type" />
       <TextInput source="max" />

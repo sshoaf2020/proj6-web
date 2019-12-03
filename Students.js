@@ -13,7 +13,6 @@ import {
   Create,
   Edit,
   SimpleForm,
-  DisabledInput,
   DateInput,
   LongTextInput,
   ReferenceManyField
