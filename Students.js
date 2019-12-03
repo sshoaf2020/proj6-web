@@ -61,7 +61,7 @@ export const CreateStudent = props => (
 export const EditStudent = props => (
   <Edit title={<StudentTitle />} {...props}>
     <SimpleForm>
-      <DisabledInput label="Id" source="id" />
+      <TextField source="id" />
       <TextInput source="name" />
     </SimpleForm>
   </Edit>
