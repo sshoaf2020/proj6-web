@@ -7,11 +7,10 @@ import { Admin, Resource, fetchUtils } from "react-admin";
 
 import jsonServerProvider from "ra-data-json-server";
 
-import AuthProvider from "./AuthProvider";
+import AuthProvider from "../../AuthProvider";
 
 import {
   ListStudents,
-  //    EditStudents,
   ShowStudent,
   EditStudent,
   CreateStudent
