@@ -5,7 +5,7 @@ export default (type, params) => {
     const { username, password } = params;
     localStorage.setItem("authString", btoa(`${username}:${password}`));
   }
-  if (type == AUTH_CHECK) {
+  if (type === AUTH_CHECK) {
     return localStorage.getItem("authString")
       ? Promise.resolve()
       : Promise.reject();
